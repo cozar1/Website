@@ -1,0 +1,124 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1d1b21;
+    color: white;
+}
+
+header {
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url('images/header.png');
+    background-size: cover;       /* Ensures the background image covers the entire header */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center;  /* Centers the background image */
+    color: white;
+    padding: 2em 0;
+}
+
+.top-right-logo {
+    right: 40px;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.top-right-logo:hover {
+    transform: scale(1.2);
+}
+
+header h1 {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+}
+
+nav ul {
+    font-family: 'Comic Sans MS', cursive;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    font-family: 'Comic Sans MS', cursive;
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    font-family: 'Comic Sans MS', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Ensure a base font size */
+    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and transform */
+    
+}
+
+nav ul li a:hover {
+    color: yellow; /* Change text color on hover */
+    font-size: 22px; /* Slightly enlarge text on hover */
+}
+
+main {
+    font-family: 'Comic Sans MS', cursive;
+    padding: 2em;
+}
+
+.hidden {
+    font-family: 'Comic Sans MS', cursive;
+    display: none;
+}
+
+.grid-container {
+    font-family: 'Comic Sans MS', cursive;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.grid-item {
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url('images/header.png');
+    background-size: cover;       /* Ensures the background image covers the entire header */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center;  /* Centers the background image */
+    background-color: #f0f0f0;
+    border: 3px solid #ccc;
+    position: relative;
+    transition: scale 0.3s /* Smooth transition for color and transform */
+}
+
+.grid-item:hover {
+    scale: 1.1;
+}
+
+.grid-item::before {
+    content: "";
+    display: block;
+    padding-top: 10%; /* Square aspect ratio */
+}
+
+
+.grid-item-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-item h2 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
