@@ -15,6 +15,7 @@ header {
     background-position: center;  /* Centers the background image */
     color: white;
     padding: 2em 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .top-right-logo {
@@ -121,4 +122,10 @@ main {
     font-size: 30px;
     color: white;
     text-shadow: 2px 2px 5px black;
+}
+
+.page-item {
+    font-family: 'Comic Sans MS', cursive;
+    scale: 75%;
+    height: 1600px;
 }
