@@ -12,15 +12,32 @@ header {
     background-image: url('images/header.png');
     background-size: cover;       /* Ensures the background image covers the entire header */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-position: center;  /* Centers the background image */
+    background-position: top;  /* Centers the background image */
     color: white;
-    padding: 2em 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 4em 0;
+    text-shadow: 2px 2px #000000;
+}
+
+home {
+    font-family: 'Comic Sans MS', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Ensure a base font size */
+    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and transform */
+    font-size: 50px;
+    
+}
+
+home:hover {
+    color: yellow; /* Change text color on hover */
+    font-size: 60px; /* Slightly enlarge text on hover */
 }
 
 .top-right-logo {
-    right: 40px;
-    width: 200px;
+    position: absolute;
+    left: 20px; /* Adjust this value as needed */
+    top: 20px; /* Adjust this value as needed */
+    width: 100px;
     height: auto;
     transition: transform 0.3s;
 }
@@ -129,3 +146,4 @@ main {
     scale: 75%;
     height: 1600px;
 }
+

@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zesty Studios - Manga</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function handleSearchForm(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Get the value from the search input
+            const searchTerm = event.target.search.value.trim().toLowerCase();
+            
+            // Check if the search term is 'home'
+            if (searchTerm === '22') {
+                window.location.href = 'manga/volume22.html'; // Redirect to the home page
+            } else {
+                // Handle other search functionalities if needed
+                console.log('Implement other search functionality here');
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo" class="top-right-logo">
-        <nav>
-            <ul>
+        <img src="images/logo.png" alt="Logo" class="top-right-logo"> 
+           <home>Zesty Studios</home>       
+        <nav>           
+            <ul>                
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Manga</a></li>
                 <li><a href="about.html">About</a></li>
@@ -20,6 +37,9 @@
 
     <main id="content">
         <h2>Manga</h2>
+        <form action="#" id="searchForm" onsubmit="handleSearchForm(event)">
+            <input type="number" placeholder="Enter Volume No." name="search">
+        </form>
         <div class="grid-container">
             <!-- 16 proportionate squares -->
             <div class="grid-item" >
