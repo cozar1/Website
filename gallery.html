@@ -3,82 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zesty Studios - Manga</title>
+    <title>Zesty Studios</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function handleSearchForm(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-            
-            // Get the value from the search input
-            const searchTerm = event.target.search.value.trim().toLowerCase();
-            
-            // Check if the search term is 'home'
-            if (searchTerm === '22') {
-                window.location.href = 'manga/volume22.html'; // Redirect to the home page
-            } else {
-                // Handle other search functionalities if needed
-                console.log('Implement other search functionality here');
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo" class="top-right-logo"> 
-           <home>Zesty Studios</home>       
-        <nav>           
-            <ul>                
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Manga</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <a>Zesty Studios</a>
+        <nav> <!-- Navbar controls all of the elements in a nav bar -->
+            <ul> <!-- ul controls the list of items in this nav bar -->
+                <a href="index.html">Home</a>  <!-- dont really know what 'a' means but it works (maybe element?) -->
+                <a href="gallery.html">Manga</a>
+                <a href="about.html">About</a>
+            </ul>          
         </nav>
     </header>
 
     <main id="content">
         <h2>Manga</h2>
-        <form action="#" id="searchForm" onsubmit="handleSearchForm(event)">
-            <input type="number" placeholder="Enter Volume No." name="search">
-        </form>
-        <div class="grid-container">
-            <!-- 16 proportionate squares -->
-            <div class="grid-item" >
-                <h2>One Piece Volume 22</h2>                
-                <a href="manga/volume22.html"><img src="images/Volume_22.png" alt="Volume 22"></a>
-                        
-                    
-            </div>
-            <div class="grid-item">
-                <h2>One Piece Volume 109</h2>
-                <img src="images/Volume_109.png" alt="Volume 109">      
-            </div>
-            <div class="grid-item">
-                <h2>One Piece Volume 88</h2>
-                <img src="images/Volume_88.png" alt="Volume 88">      
-            </div>
-            <div class="grid-item">
-                <h2>One Piece Volume 66</h2>
-                <img src="images/Volume_66.png" alt="Volume 66">      
-            </div>
-            <div class="grid-item">
-                <h2>One Piece Volume 80</h2>
-                <img src="images/Volume_80.png" alt="Volume 80">      
-            </div>
-            <div class="grid-item">
-                <h2>One Piece Volume 52</h2>
-                <img src="images/Volume_52.png" alt="Volume 52">      
-            </div>
-            <div class="grid-item" >
-                <h2>One Piece Volume 35</h2>
-                <img src="images/Volume_35.png" alt="Volume 35">                
-            </div>
-            <div class="grid-item">
-                <h2>One Piece Volume 97</h2>
-                <img src="images/Volume_97.png" alt="Volume 97">      
-            </div>
-   
+            <div class="grid-container">                
+                    <div class="grid-item" >
+                        <h2>One Piece Volume 22</h2>                
+                        <a href="manga/volume22.html"><img src="images/Volume_22.png" alt="Volume 22"></a>     
+                    </div>                
 
-        </div>
+                    <div class="grid-item" >
+                        <h2>One Piece Volume 109</h2>
+                        <img src="images/Volume_109.png" alt="Volume 109">      
+                    </div>
+
+                    <div class="grid-item" >
+                        <h2>One Piece Volume 88</h2>
+                        <img src="images/Volume_88.png" alt="Volume 88">   
+                    </div>  
+
+                    <div class="grid-item" >
+                        <h2>One Piece Volume 22</h2>                
+                        <a href="manga/volume22.html"><img src="images/Volume_22.png" alt="Volume 22"></a>     
+                    </div>                
+
+                    <div class="grid-item" >
+                        <h2>One Piece Volume 109</h2>
+                        <img src="images/Volume_109.png" alt="Volume 109">      
+                    </div>
+
+                    <div class="grid-item" >
+                        <h2>One Piece Volume 88</h2>
+                        <img src="images/Volume_88.png" alt="Volume 88">   
+                    </div>  
+                </div>
+            </div>
     </main>
 </body>
 </html>

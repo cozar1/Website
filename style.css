@@ -1,149 +1,134 @@
 body {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Verdana';
+    font-weight: bold;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #1d1b21;
+    background-image: url('images/background.png');
+    background-size: auto;
+    background-position: -20px;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 header {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Verdana';
     background-image: url('images/header.png');
-    background-size: cover;       /* Ensures the background image covers the entire header */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-position: top;  /* Centers the background image */
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: top; 
     color: white;
-    padding: 4em 0;
-    text-shadow: 2px 2px #000000;
+    padding: 2em 0;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
 }
 
-home {
-    font-family: 'Comic Sans MS', cursive;
+header a {
+    font-family: 'Verdana';
     color: white;
-    text-decoration: none;
-    font-size: 16px; /* Ensure a base font size */
-    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and transform */
+    transition: color 0.3s, font-size 0.3s;
     font-size: 50px;
     
 }
 
-home:hover {
-    color: yellow; /* Change text color on hover */
-    font-size: 60px; /* Slightly enlarge text on hover */
+header a:hover {
+    color: rgb(255, 255, 255); 
+    font-size: 60px; 
 }
 
-.top-right-logo {
+.logo {
     position: absolute;
-    left: 20px; /* Adjust this value as needed */
-    top: 20px; /* Adjust this value as needed */
+    left: 20px;
+    top: 0px;
     width: 100px;
     height: auto;
     transition: transform 0.3s;
 }
 
-.top-right-logo:hover {
+
+.logo:hover {
     transform: scale(1.2);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 97, 97), 0 0 5px rgb(189, 52, 52);
 }
 
-header h1 {
-    font-family: 'Comic Sans MS', cursive;
-    margin: 0;
-}
-
-nav ul {
-    font-family: 'Comic Sans MS', cursive;
+nav ul { /* nav bar */
+    font-family: 'Verdana';
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    font-family: 'Comic Sans MS', cursive;
+nav ul li { /* nav bar items */
+    font-family: 'Verdana';
     display: inline;
     margin: 0 1em;
 }
 
-nav ul li a {
-    font-family: 'Comic Sans MS', cursive;
+nav ul a { /* nav bar individual items */
+    font-family: 'Verdana';
+    display: inline;
+    margin: 0 1em;
+    font-family: 'Verdana';
+    list-style-type: none;
+    padding: 0;
+    margin: 0 1em;
+    font-family: 'Verdana';
     color: white;
     text-decoration: none;
-    font-size: 16px; /* Ensure a base font size */
-    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and transform */
+    font-size: 16px; 
+    transition: color 0.3s, font-size 0.3s; 
     
 }
 
-nav ul li a:hover {
-    color: yellow; /* Change text color on hover */
-    font-size: 22px; /* Slightly enlarge text on hover */
+nav ul a:hover { /* nav bar individual items transition */
+    color: rgb(185, 50, 50); 
+    font-size: 22px; 
 }
 
-main {
-    font-family: 'Comic Sans MS', cursive;
-    padding: 2em;
-}
-
-.hidden {
-    font-family: 'Comic Sans MS', cursive;
-    display: none;
-}
-
-.grid-container {
-    font-family: 'Comic Sans MS', cursive;
+.grid-container { /* group of manga boxes */
+    font-family: 'Verdana';
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 30px;
     padding: 30px;
 }
 
-.grid-item {
-    font-family: 'Comic Sans MS', cursive;
+.grid-item { /* individual manga boxes */
+    font-family: 'Verdana';
     background-image: url('images/header.png');
-    background-size: cover;       /* Ensures the background image covers the entire header */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-position: center;  /* Centers the background image */
+    background-size: cover;       
+    background-repeat: no-repeat;
+    background-position: center;  
     background-color: #f0f0f0;
-    border: 3px solid #ccc;
+    border: 5px solid #ccc;
+    border-radius: 5px;
     position: relative;
-    transition: scale 0.3s /* Smooth transition for color and transform */
+    transition: scale 0.3s;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
 }
 
-.grid-item:hover {
+.grid-item:hover { /* individual manga boxes transition */
     scale: 1.1;
 }
 
-.grid-item::before {
-    content: "";
-    display: block;
-    padding-top: 10%; /* Square aspect ratio */
-}
-
-
-.grid-item-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grid-item img {
+.grid-item img { /* individual manga boxes image */
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.grid-item h2 {
-    font-family: 'Comic Sans MS', cursive;
+.grid-item h2 { /* individual manga boxes text */
+    font-family: 'Verdana';
     font-size: 30px;
     color: white;
     text-shadow: 2px 2px 5px black;
 }
 
-.page-item {
-    font-family: 'Comic Sans MS', cursive;
+.page-item { /* manga page */
+    gap: 30px;
+    padding: 30px;
     scale: 75%;
     height: 1600px;
+}
+
+.page-item img { /* manga page */
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 
