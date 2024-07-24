@@ -112,6 +112,7 @@ nav ul a:hover { /* nav bar individual items transition */
 .grid-item img { /* individual manga boxes image */
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
 }
 
 .grid-item h2 { /* individual manga boxes text */
@@ -121,14 +122,17 @@ nav ul a:hover { /* nav bar individual items transition */
     text-shadow: 2px 2px 5px black;
 }
 
-.page-item { /* manga page */
-    gap: 30px;
-    padding: 30px;
-    scale: 75%;
-    height: 1600px;
-}
-
 .page-item img { /* manga page */
+    width: 800px;
     box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 
+.page-item h2 {
+    height: min-content;
+}
+
+h3 {
+    width: 1000px;
+    font-size: 20px;
+    display: inline-block; 
+}
